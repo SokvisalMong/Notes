@@ -2,7 +2,7 @@
 
 ### docker-compose
 
-
+`sudo apt-get install docker-compose-plugin`
 
 ### php 7.4
 
@@ -59,3 +59,11 @@ Example:
 Example:
 
 `sudo service mysql start`
+
+### Clone a laravel Repo
+
+1. Clone the repo
+2. run `composer install`
+3. Copy the env example into env using `cp .env.example .env`
+4. Migrate database `php artisan migrate`
+5. Run the laravel project `php artisan serve`
