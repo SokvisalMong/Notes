@@ -6,6 +6,12 @@ Specifically for Laravel 8.
 
 This will make sure that everyone is on the same environment.
 
+## Zip/Unzip
+
+`sudo apt update`
+
+`sudo apt-get install zip unzip -y`
+
 ## Installing PHP
 
 `sudo apt install software-properties-common ca-certificates lsb-release apt-transport-https -y`
