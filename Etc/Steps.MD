@@ -2,6 +2,8 @@
 
 For my group mates who setup WSL2 on Windows and using Ubuntu 20.04.
 
+Specifically for Laravel 8.
+
 This will make sure that everyone is on the same environment.
 
 ## Installing PHP
@@ -10,11 +12,15 @@ This will make sure that everyone is on the same environment.
 
 `LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php`
 
-`sudo apt-get update && sudo apt-get upgrade`
+`sudo apt update`
 
 `sudo apt install php7.4 -y`
 
-`sudo apt-get install php-fpm php-mysql php7.4-cli php7.4-curl php7.4-mbstring php7.4-xml php7.4-zip php7.4-intl curl git unzip php-cli -y`
+`sudo apt install php7.4-mysql php7.4-mbstring php7.4-xml php7.4-curl -y`
+
+`sudo apt install php7.4-common php7.4-bcmath openssl php7.4-json php7.4-mbstring -y`
+
+`php -v`
 
 ## Composer
 
@@ -27,6 +33,8 @@ This will make sure that everyone is on the same environment.
 `` HASH=`curl -sS https://composer.github.io/installer.sig` ``
 
 `php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"`
+
+`sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer`
 
 ## Apache 2
 
@@ -67,6 +75,8 @@ Follow these [steps](https://docs.docker.com/engine/install/ubuntu/#set-up-the-r
 ### Start docker
 
 `sudo service docker start`
+
+# Extra
 
 ## Installing NeoVim
 
