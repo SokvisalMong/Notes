@@ -6,27 +6,31 @@ This will make sure that everyone is on the same environment.
 
 ## Installing PHP
 
-`sudo apt install software-properties-common ca-certificates lsb-release apt-transport-https`
+`sudo apt install software-properties-common ca-certificates lsb-release apt-transport-https -y`
 
 `LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php`
 
 `sudo apt-get update && sudo apt-get upgrade`
 
-`sudo apt install php7.4`
+`sudo apt install php7.4 -y`
 
-`sudo apt-get install php-fpm php-mysql php7.4-cli php7.4-curl php7.4-mbstring php7.4-xml php7.4-zip php7.4-intl curl git unzip php-cli`
+`sudo apt-get install php-fpm php-mysql php7.4-cli php7.4-curl php7.4-mbstring php7.4-xml php7.4-zip php7.4-intl curl git unzip php-cli -y`
 
 ## Composer
 
+`sudo apt update`
+
 `cd ~`
 
-`curl -sS https://getcomposer.org/installer -o composer-setup.php`
+`curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php`
 
-`sudo php composer-setup.php –install-dir=/usr/local/bin –filename=composer`
+`` HASH=`curl -sS https://composer.github.io/installer.sig` ``
+
+`php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"`
 
 ## Apache 2
 
-`sudo apt install apache2`
+`sudo apt install apache2 -y`
 
 ### Start Apache 2
 
@@ -34,17 +38,21 @@ This will make sure that everyone is on the same environment.
 
 ## MySQL
 
-`sudo apt install mysql-server`
+`sudo apt install mysql-server -y`
 
 ### Start MySQL
 
 `sudo service mysql start`
 
+## Docker Compose
+
+Follow these [steps](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository)
+
 ## Docker
 
 `sudo apt update`
 
-`sudo apt install apt-transport-https ca-certificates curl software-properties-common`
+`sudo apt install apt-transport-https ca-certificates curl software-properties-common -y`
 
 `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
 
@@ -52,17 +60,13 @@ This will make sure that everyone is on the same environment.
 
 `apt-cache policy docker-ce`
 
-`sudo apt install docker docker-ce`
+`sudo apt install docker docker-ce -y`
 
-`sudo apt install containerd`
+`sudo apt install containerd -y`
 
 ### Start docker
 
 `sudo service docker start`
-
-## Docker Compose
-
-Follow these [steps](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository)
 
 ## Installing NeoVim
 
@@ -70,4 +74,4 @@ Follow these [steps](https://docs.docker.com/engine/install/ubuntu/#set-up-the-r
 
 `sudo apt-get update`
 
-`sudo apt-get install neovim`
+`sudo apt-get install neovim -y`
