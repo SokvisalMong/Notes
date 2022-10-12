@@ -30,6 +30,10 @@ Install PHP and dependencies
 
 Comes with composer
 
+Setup laravel
+
+`composer create-project laravel/laravel="8.*" exampleapp`
+
 ### tailwind
 
 https://tailwindcss.com/docs/installation
