@@ -39,11 +39,17 @@ Go into said folder
 
 `cd ProjectFolder`
 
-
-
 Download the Docker Compose image
 
 `curl -s "https://laravel.build/finalproject" | bash`
+
+If the output is
+
+`Docker is not running`
+
+You go back and check things over dumb dumb
+
+Aight, all good? All set? Lets go
 
 Go into the project folder
 
