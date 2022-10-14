@@ -67,20 +67,6 @@ After the terminal calms the fuck down
 
 `sail down` or `Ctrl+C` that shit if you can't
 
-Add permissions to storage directory
-
-`sudo chmod o+w ./storage/ -R`
-
-`sudo chown -R www-data:www-data *`
-
-Run the application again
-
-`sail up -d`
-
-Wait til all the containers are running then
-
-`sail artisan storage:link`
-
 To connect to the page, go to `localhost`
 
 To open the file directory on VS Code
