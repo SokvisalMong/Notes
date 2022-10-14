@@ -56,6 +56,22 @@ If you want to make all remote branches local, you need a script.
 
 Look it up cus I ain't providing it.
 
+## Staying up to date
+
+Each time you are about to work on the project, make sure you have the latest build of master.
+
+First, check into your branch
+
+`git checkout BRANCH`
+
+Second, fetch the latest repo
+
+`git fetch origin`
+
+Lastly, merge your current branch with the latest repo
+
+`git merge origin/master`
+
 # Frequently used commands
 
 ## Commiting
