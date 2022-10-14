@@ -2,9 +2,9 @@
 
 Sail is a CLI used to interact with Laravel's Docker development environment.
 
-## Using Sail
+# Using Sail
 
-### Setting Alias
+## Setting Alias
 
 The normal way to use sail is to run
 
@@ -28,7 +28,7 @@ We can now just type
 
 ***I CAN NOT BE FUCKED SO GOODLUCK***
 
-### Starting Sail
+## Starting Sail
 
 The command to start the docker application through sail is
 
@@ -43,7 +43,7 @@ To counter this, you have 2 options:
 - Run it detached
 - or Use Screen
 
-### Detached
+## Detached
 
 To run the container in detached mode, run sail with the `-d` tag
 
@@ -53,7 +53,7 @@ To run the container in detached mode, run sail with the `-d` tag
 
 This will run the container in the background and free up the current terminal.
 
-### Screen (My prefered method, therefore the correct one)
+## Screen (My prefered method, therefore the correct one)
 
 Running the container in a seperate screen can let use switch between checking the logs and using a terminal.
 
@@ -111,11 +111,11 @@ There are 2 ways to stop, or kill, a screen
 - From within the screen, or Attached
 - From outside the screen, or Detached
 
-### Attached Method
+## Attached Method
 
 Use the keyboard shortcut `Ctrl + D` from within the screen.
 
-### Detached Method
+## Detached Method
 
 Run
 
