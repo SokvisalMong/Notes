@@ -61,6 +61,12 @@ First of all, you need to install Screen.
 
 `sudo apt-get install screen`
 
+***YOU MIGHT ALSO NEED TO DO THIS***
+
+`sudo chmod -R 777 /var/run/screen`
+
+***KEYWORD: MIGHT***
+
 Then, start a screen session by running
 
 `screen -S SCREENNAME`
@@ -123,4 +129,4 @@ Run
 
 While being detached from the screen.
 
-***YOU MIGHT NEED TO RUN ALL OF THESE IN SUDO***
+***DON'T RUN SCREEN IN SUDO***
