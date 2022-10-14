@@ -59,6 +59,10 @@ Go into said folder
 
 `cd ProjectFolder`
 
+Make sure in Docker Desktop that these options are enabled for whatever distro you are working on
+
+![if this shows up, you're fucked](Screenshot_832.png "Screenshot")
+
 Download the Docker Compose image
 
 `curl -s "https://laravel.build/finalproject" | bash`
