@@ -4,50 +4,30 @@
 
 Prerequisites:
 - Running Ubuntu through WSL2 on Windows, Straight up Ubuntu, or MacOS
-- Docker Compose is installed
+- Docker Desktop is installed
 - Basic knowledge of linux things
-- Make sure Docker is running
+- Make sure Docker is running in the background
 - This extension on VSCode: `ms-vscode-remote.vscode-remote-extensionpack`
 
 ## Setting up Ubuntu WSL2 on Windows
 
 fucking look it up yourself
 
-## To install Docker Compose
+After setting up an Ubuntu Distro on Windows
 
-`sudo apt-get update`
+Make sure the close the distro
 
-```
-sudo apt-get install \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
-```
+`exit`
 
-`sudo mkdir -p /etc/apt/keyrings`
+Turn on these options
 
-`curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
+![if this shows up, you're fucked](Screenshot_832.png "Screenshot")
 
-```
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-```
+Save and restart Docker Desktop
 
-`sudo apt-get update`
+Launch the Ubuntu Distro
 
-`sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin`
-
-## Have Docker Desktop opened in the background or
-
-For Linux (idk about Windows and can't be fucked honestly)
-
-`sudo service docker start`
-
-Check if Docker is running
-
-`sudo service docker status`
+Bada bing Bada boom
 
 ## Setting up Laravel Sail
 
@@ -59,9 +39,7 @@ Go into said folder
 
 `cd ProjectFolder`
 
-Make sure in Docker Desktop that these options are enabled for whatever distro you are working on
 
-![if this shows up, you're fucked](Screenshot_832.png "Screenshot")
 
 Download the Docker Compose image
 
@@ -98,3 +76,7 @@ Wait til all the containers are running then
 `sail artisan storage:link`
 
 To connect to the page, go to `localhost`
+
+To open the file directory on VS Code
+
+`code .`
