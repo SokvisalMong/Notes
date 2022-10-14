@@ -77,7 +77,7 @@ Build the server for the first time
 
 After the terminal calms the fuck down
 
-`sail down`
+`sail down` or `Ctrl+C` that shit if you can't
 
 Add permissions to storage directory
 
