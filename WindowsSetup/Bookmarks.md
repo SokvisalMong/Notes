@@ -1,0 +1,7 @@
+- [ ] [Movie Download](https://yts.mx/)
+- [ ] [Torrent](https://1337x.to/)
+- [ ] [Anime Download](https://animepahe.com/)
+- [ ] [Game Download](https://fitgirl-repacks.site/)
+- [ ] [KickassAnime](https://www2.kickassanime.ro/)
+- [ ] [9anime](https://9anime.gs/)
+- [ ] [Movie and Show Streaming](https://www4.fbox.to/)
