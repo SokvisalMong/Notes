@@ -7,15 +7,15 @@
 
 ## VS Code
 
-- [ ] Markdown Preview Enhanced `shd101wyy.markdown-preview-enhanced`
-- [ ] Auto Close Tag `formulahendry.auto-close-tag`
-- [ ] Better Comments `aaron-bond.better-comments`
-- [ ] Community Material Theme `Equinusocio.vsc-community-material-theme`
-- [ ] Material Icon `PKief.material-icon-theme`
-- [ ] Discord Presence `icrawl.discord-vscode`
-- [ ] Remote Development `ms-vscode-remote.vscode-remote-extensionpack`
-- [ ] Docker `ms-azuretools.vscode-docker`
-- [ ] Laravel Blade Snippets `onecentlin.laravel-blade`
-- [ ] Path Intellisense `christian-kohler.path-intellisense`
-- [ ] Prettier `esbenp.prettier-vscode`
-- [ ] YAML `redhat.vscode-yaml`
+- [x] Markdown Preview Enhanced `shd101wyy.markdown-preview-enhanced`
+- [x] Auto Close Tag `formulahendry.auto-close-tag`
+- [x] Better Comments `aaron-bond.better-comments`
+- [x] Community Material Theme `Equinusocio.vsc-community-material-theme`
+- [x] Material Icon `PKief.material-icon-theme`
+- [x] Discord Presence `icrawl.discord-vscode`
+- [x] Remote Development `ms-vscode-remote.vscode-remote-extensionpack`
+- [x] Docker `ms-azuretools.vscode-docker`
+- [x] Laravel Blade Snippets `onecentlin.laravel-blade`
+- [x] Path Intellisense `christian-kohler.path-intellisense`
+- [x] Prettier `esbenp.prettier-vscode`
+- [x] YAML `redhat.vscode-yaml`
